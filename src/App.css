@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  background-color: #27292b;
+}
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.menu button {
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.child {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  width: 100px;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 35px 150px;
+}
+
+.section div {
+  border: #5f5f5f 1px solid;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.btn-action {
+  text-align: center;
+}
+
+.buybtn {
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.mr-5 {
+  margin-right: 10px;
+}
+
+.uni-guide {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: orange;
+}
+
+/* media query */
+
+@media (max-width: 680px) {
+  .section {
+    color: white;
+    display: block;
+    padding: 27px 30px;
+  }
+
+  .section div {
+    margin-bottom: 5px;
+  }
+
+  .child {
+    position: static;
+    transform: none;
+  }
+  .title {
+    margin-bottom: 0;
+  }
+}
