@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Hoge Front End Web Application
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+First step is to copy the `.env.example` and rename it to `.env`.\
+Then run `yarn start` or `npm run start`
 
 ## Available Scripts
 
