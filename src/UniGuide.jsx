@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-export default function UniGuide() {
-    return (
-        <div>
-            <p>Uni Guide</p>
-        </div>
-    )
-}
+const UniGuide = () => (
+    <div>
+        <p>Uni Guide</p>
+    </div>
+);
+
+export default UniGuide;

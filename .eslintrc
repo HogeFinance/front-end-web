@@ -1,0 +1,68 @@
+{
+  "parser": "babel-eslint",
+  "plugins": ["react", "jest"],
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest/globals": true
+  },
+   "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
+  "globals": {
+    "setupWrapper": true,
+    "setupWrapperStore": true,
+    "shallowWrapper": true,
+    "mountWrapper": true,
+    "wrapperStore": true
+  },
+  "rules": {
+    "camelcase": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "indent": ["error", 4, { "SwitchCase": 1 }],
+    "linebreak-style": "off",
+    "max-len": "off",
+    "no-underscore-dangle": 1,
+    "eqeqeq": ["error", "always"],
+    "react/forbid-prop-types": "off",
+    "no-multi-spaces": "off",
+    "prefer-arrow-callback": "error",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-console": 0,
+    "react/prefer-es6-class": 1,
+    "react/jsx-indent-props": ["error", 4],
+    "react/jsx-indent": ["error", 4],
+    "react/no-did-update-set-state": ["off"],
+    "react/prop-types": 1,
+    "react/jsx-one-expression-per-line": ["off"],
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "to" ]
+    }],
+    "import/extensions": [
+      "error", "ignorePackages",
+      {
+        "js": "never",
+        "json": "always"
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": false
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        }
+      }
+    ]
+  }
+}
